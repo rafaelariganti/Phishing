@@ -1,0 +1,8 @@
+create database Netflix;
+USE Netflix;
+
+CREATE TABLE TB_USUARIO(
+    ID_US INT PRIMARY KEY AUTO_INCREMENT,
+    LOGIN_US VARCHAR(100),
+    SENHA_US VARCHAR(100)
+);
