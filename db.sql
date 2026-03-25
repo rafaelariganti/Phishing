@@ -1,8 +1,13 @@
-create database Netflix;
-USE Netflix;
+CREATE DATABASE netflix;
+USE netflix;
 
-CREATE TABLE TB_USUARIO(
-    ID_US INT PRIMARY KEY AUTO_INCREMENT,
-    LOGIN_US VARCHAR(100),
-    SENHA_US VARCHAR(100)
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    sobrenome VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    celular VARCHAR(20),
+    nascimento DATE,
+    plano VARCHAR(50),
+    senha VARCHAR(255) NOT NULL
 );
